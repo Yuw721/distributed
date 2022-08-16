@@ -1,0 +1,19 @@
+#########保留该空的配置文件，新增的配置项，如果不需要推送到远端，可以在本配置文件中配置##########
+#################################################################################
+server:
+  port: 8090
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/tfs?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false
+    driverClassName: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 8
+    timeout: 1000s
+mybatis:
+  configuration:
+    jdbcTypeForNull: 'null'
